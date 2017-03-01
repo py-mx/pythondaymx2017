@@ -18,11 +18,13 @@ body{
   width: 100%;
   position: absolute;
 }
+.main-container{
+  position: relative;
+  top: 50%
+}
 .main-section h1{
   font-weight: 900;
   font-size: 120px;
-  line-height: 40px;
-  margin-bottom: 40px;
   text-shadow: 0 0 20px #222;
 }
 .main-section h1 span{
@@ -49,8 +51,10 @@ body{
 }
 .text-wrapper{
   position: relative;
-  top: 145%;
-  transform: translateY(145%);
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 
 @-webkit-keyframes AnimationName {
@@ -67,4 +71,42 @@ body{
     0%{background-position:0% 96%}
     50%{background-position:100% 5%}
     100%{background-position:0% 96%}
+}
+
+/*MEDIAQUERIES*/
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .main-section h1{
+    font-size: 80px;
+  }
+  .main-section p{
+    font-size: 24px;
+  }
+  .main-section p:last-child{
+    font-size: 12px;
+  }
+}
+@media (min-width: 568px) and (max-width: 767px){
+  .main-section h1{
+    font-size: 50px;
+  }
+  .main-section p{
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+  .main-section p:last-child{
+    font-size: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 567px){
+  .main-section h1{
+    font-size: 40px;
+  }
+  .main-section p{
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  .main-section p:last-child{
+    font-size: 10px;
+  }
 }
