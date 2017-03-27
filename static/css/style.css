@@ -19,6 +19,21 @@ body{
   width: 100%;
   position: absolute;
 }
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@-moz-keyframes GradientAnimation {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@keyframes GradientAnimation {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
 .main-container{
   position: relative;
   top: 50%
@@ -85,23 +100,17 @@ body{
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
 }
-
-@-webkit-keyframes GradientAnimation {
-    0%{background-position:0% 96%}
-    50%{background-position:100% 5%}
-    100%{background-position:0% 96%}
+.contacto p{
+  font-size: 20px;
+  letter-spacing: normal;
 }
-@-moz-keyframes GradientAnimation {
-    0%{background-position:0% 96%}
-    50%{background-position:100% 5%}
-    100%{background-position:0% 96%}
+.contacto p:last-child{
+  text-transform: none;
+  margin-top: 0
 }
-@keyframes GradientAnimation {
-    0%{background-position:0% 96%}
-    50%{background-position:100% 5%}
-    100%{background-position:0% 96%}
+.contacto a{
+  color: #8f0;
 }
-
 /*MEDIAQUERIES*/
 
 @media (min-width: 768px) and (max-width: 1024px){
