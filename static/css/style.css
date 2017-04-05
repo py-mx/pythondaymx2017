@@ -111,6 +111,17 @@ body{
 .contacto a{
   color: #8f0;
 }
+
+/*SCHEDULE*/
+
+.schedule{
+  margin: 60px 0;
+}
+.schedule h2{
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #8f0;
+}
 /*MEDIAQUERIES*/
 
 @media (min-width: 768px) and (max-width: 1024px){
