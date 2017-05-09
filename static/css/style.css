@@ -1,5 +1,6 @@
 body{
   font-family: 'Source Sans Pro', sans-serif;
+  background: #3bfa3b;
 }
 header{
   background: rgba(255,255,255,0.1);
@@ -13,11 +14,11 @@ header{
 header a{
   font-size: 20px;
   line-height: 60px;
-  color: #8f0;
+  color: #3bfa3b;
 }
 header a:hover,
 header a:focus{
-  color: #8f0;
+  color: #3bfa3b;
   text-decoration: none;
 }
 .nav-up {
@@ -31,7 +32,7 @@ header a:focus{
   color: #fff;
   overflow: hidden;
 }
-.main-gradient{
+/*.main-gradient{
   background: linear-gradient(269deg, rgba(99, 149, 181, 0.4), rgba(255, 214, 117, 0.4));
   background-size: 400% 400%;
   -webkit-animation: GradientAnimation 10s ease infinite;
@@ -40,8 +41,8 @@ header a:focus{
   height: 100vh;
   width: 100%;
   position: absolute;
-}
-@-webkit-keyframes GradientAnimation {
+}*/
+/*@-webkit-keyframes GradientAnimation {
     0%{background-position:0% 96%}
     50%{background-position:100% 5%}
     100%{background-position:0% 96%}
@@ -55,7 +56,7 @@ header a:focus{
     0%{background-position:0% 96%}
     50%{background-position:100% 5%}
     100%{background-position:0% 96%}
-}
+}*/
 .main-container{
   position: relative;
   top: 50%
@@ -91,7 +92,7 @@ header a:focus{
 .main-section .registro{
   font-size: 25px;
   text-transform: uppercase;
-  border: 5px solid #8f0;
+  border: 5px solid #3bfa3b;
   display: inline-block;
   margin-top: 30px;
   padding: 15px 25px;
@@ -108,7 +109,7 @@ header a:focus{
 }
 .main-section li{
   display: inline-block;
-  border: 5px solid #8f0;
+  border: 5px solid #3bfa3b;
   width: 45px;
   text-shadow: 0 0 20px #222;
 }
@@ -131,18 +132,41 @@ header a:focus{
   margin-top: 0
 }
 .contacto a{
-  color: #8f0;
+  color: #3bfa3b;
 }
 
 /*SCHEDULE*/
 
 .schedule{
-  margin: 60px 0;
+  background: #222;
+  padding: 60px 0;
+  color: #3bfa3b;
 }
 .schedule h2{
   margin-top: 0;
+  margin-bottom: 10px;
+}
+.schedule p{
   margin-bottom: 40px;
-  color: #8f0;
+}
+.schedule table th{
+  font-size: 16px;
+}
+.schedule .table>thead>tr>th{
+  border-bottom: 1px solid #3bfa3b;
+}
+.schedule .table>tbody>tr>td{
+  border-top: 1px solid #3bfa3b;
+}
+/*OBJETIVOS*/
+
+.objetivos{
+  background: #3bfa3b;
+  padding: 60px 0;
+}
+.objetivos h2{
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 /*MEDIAQUERIES*/
 
